@@ -24,7 +24,7 @@ def get_data():
     return results
 
 
-def show_data(records: list):
+def show_data(records):
     for record in records:
         pprint.pprint(record)
 
@@ -69,14 +69,14 @@ def delete_index():
     student_collection.drop_index("name_text")
 
 #def search_students_and_sort
-
-#add_data()
+remove_data()
+add_data()
 #show_data(get_data())
-#remove_data()
+
 
 #show_data(find_students_by_name("Jill"))
-create_index()
-show_indexes()
+#create_index()
+#show_indexes()
 #delete_index()
 
 #show_data(search_students("jill, robotics"))
